@@ -1,0 +1,59 @@
+cmake:
+  application:
+    configuration-dir: '/home/yuvan66/zephyrproject/myprojects/thread_1'
+    source-dir: '/home/yuvan66/zephyrproject/myprojects/thread_1'
+  board:
+    name: 'esp32_devkitc'
+    path:
+     - '/home/yuvan66/zephyrproject/zephyr/boards/espressif/esp32_devkitc'
+    qualifiers: 'esp32/procpu'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/home/yuvan66/zephyrproject/zephyr/dts/bindings'
+    files:
+     - '/home/yuvan66/zephyrproject/zephyr/boards/espressif/esp32_devkitc/esp32_devkitc_procpu.dts'
+    include-dirs:
+     - '/home/yuvan66/zephyrproject/modules/hal/ambiq/dts'
+     - '/home/yuvan66/zephyrproject/modules/hal/atmel/include'
+     - '/home/yuvan66/zephyrproject/modules/hal/bouffalolab/include'
+     - '/home/yuvan66/zephyrproject/modules/hal/bouffalolab/include/zephyr'
+     - '/home/yuvan66/zephyrproject/modules/hal/gigadevice/include'
+     - '/home/yuvan66/zephyrproject/modules/hal/infineon/dts'
+     - '/home/yuvan66/zephyrproject/modules/hal/microchip/include'
+     - '/home/yuvan66/zephyrproject/modules/hal/microchip/dts'
+     - '/home/yuvan66/zephyrproject/modules/hal/nuvoton/dts'
+     - '/home/yuvan66/zephyrproject/modules/hal/nxp/dts'
+     - '/home/yuvan66/zephyrproject/modules/hal/stm32/dts'
+     - '/home/yuvan66/zephyrproject/modules/hal/ti/dts'
+     - '/home/yuvan66/zephyrproject/zephyr/include'
+     - '/home/yuvan66/zephyrproject/zephyr/include/zephyr'
+     - '/home/yuvan66/zephyrproject/zephyr/dts/common'
+     - '/home/yuvan66/zephyrproject/zephyr/dts/vendor'
+     - '/home/yuvan66/zephyrproject/zephyr/dts/rx'
+     - '/home/yuvan66/zephyrproject/zephyr/dts/x86'
+     - '/home/yuvan66/zephyrproject/zephyr/dts/xtensa'
+     - '/home/yuvan66/zephyrproject/zephyr/dts/sparc'
+     - '/home/yuvan66/zephyrproject/zephyr/dts/riscv'
+     - '/home/yuvan66/zephyrproject/zephyr/dts/posix'
+     - '/home/yuvan66/zephyrproject/zephyr/dts/arm64'
+     - '/home/yuvan66/zephyrproject/zephyr/dts/arm'
+     - '/home/yuvan66/zephyrproject/zephyr/dts/arc'
+     - '/home/yuvan66/zephyrproject/zephyr/dts'
+  kconfig:
+    files:
+     - '/home/yuvan66/zephyrproject/zephyr/boards/espressif/esp32_devkitc/esp32_devkitc_procpu_defconfig'
+     - '/home/yuvan66/zephyrproject/myprojects/thread_1/prj.conf'
+    user-files:
+     - '/home/yuvan66/zephyrproject/myprojects/thread_1/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: '/home/yuvan66/zephyr-sdk-1.0.1'
+  zephyr:
+    version: '4.4.99'
+    zephyr-base: '/home/yuvan66/zephyrproject/zephyr'
+version: '0.1.0'
+west:
+  command: '/home/yuvan66/zephyrproject/.venv/bin/west build -p always -b esp32_devkitc/esp32/procpu'
+  topdir: '/home/yuvan66/zephyrproject'
+  version: '1.5.0'
