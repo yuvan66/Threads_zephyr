@@ -1,0 +1,10 @@
+# Zephyr build directory
+build/
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc

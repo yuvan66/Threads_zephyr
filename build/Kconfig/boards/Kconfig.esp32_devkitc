@@ -1,2 +1,0 @@
-# Load board Kconfig descriptions.
-osource "/home/yuvan66/zephyrproject/zephyr/boards/espressif/esp32_devkitc/Kconfig.esp32_devkitc"
